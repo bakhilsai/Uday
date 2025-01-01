@@ -2,45 +2,37 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Makeup Artist &amp; Mehndi Specialist
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
+  <title>Makeup Artist & Mehndi Specialist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
- </head>
- <body class="font-roboto bg-gray-100">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    @media (max-width: 767px) {
+      .mobile-nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+      .mobile-nav ul li {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body class="font-roboto bg-gray-100">
   <header class="bg-white shadow-md">
-   <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-    <h3 class="text-3xl font-bold text-gray-800">
-     Makeup &amp; Mehndi Artist
-    </h3>
-    <nav>
-     <ul class="flex space-x-6">
-      <li>
-       <a class="text-gray-600 hover:text-gray-800" href="#about">
-        About
-       </a>
-      </li>
-      <li>
-       <a class="text-gray-600 hover:text-gray-800" href="#gallery">
-        Gallery
-       </a>
-      </li>
-      <li>
-       <a class="text-gray-600 hover:text-gray-800" href="#contact">
-        Contact
-       </a>
-      </li>
-      <li>
-       <a class="text-gray-600 hover:text-gray-800" href="#appointment">
-        Book 
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </div>
+    <div class="container mx-auto px-4 py-6">
+      <h3 class="text-3xl font-bold text-gray-800 text-center">
+        Makeup & Mehndi Artist
+      </h3>
+      <nav class="mobile-nav mt-4">
+        <ul class="flex flex-col space-y-2 items-center">
+          <li><a class="text-gray-600 hover:text-gray-800" href="#about">About</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800" href="#gallery">Gallery</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800" href="#contact">Contact</a></li>
+          <li><a class="text-gray-600 hover:text-gray-800" href="#appointment">Book</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <section class="container mx-auto px-4 py-12" id="about">
    <div class="flex flex-col md:flex-row items-center">
